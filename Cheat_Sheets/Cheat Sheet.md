@@ -2,7 +2,7 @@
 IP: 1.1.1.1
 Port: "443"
 Username: Jimmy
-Password: REXTRULEZ
+Password: Password1
 ---
 
 # Reconnaissance
