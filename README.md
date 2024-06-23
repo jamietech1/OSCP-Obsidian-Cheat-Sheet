@@ -1,4 +1,4 @@
-- This is a template designed to work in Obsidian that will drastically reduce the amount of time you spend copying and pasting data whilst both on the OSCP exam or indeed whilst conducting CTFs or engagements
+- This is a template designed to work in Obsidian and requires the installation of the community plugin "Templater" that will drastically reduce the amount of time you spend copying and pasting data whilst both on the OSCP exam or indeed whilst conducting CTFs or engagements
 - Copy the template into a new .md file dedicated to the specific machine in the lab.
 - Fill in the variables in the "properties" section at the top of the page
   
